@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+        <div class="left"></div>
+        <div class="right">
+            <div class="content">
+                 <h1>this is heading</h1>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit qui dolor eligendi reiciendis quo fuga ut quos ipsam quod ea reprehenderit assumenda, nemo pariatur rerum, molestias excepturi atque ex dignissimos!</p>
+                 <a href="#" class="btn">click me</a>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;800&display=swap');
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-family: Montserrat;
+        }
+        section{
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #F0E68C;
+        }
+        .container{
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .left{
+            width: 50%;
+            height: 600px;
+            background-image:url(images/r.jpg) ;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 8px;
+            
+
+        }
+        .right{
+            width: 50%;
+            min-height: 400px;
+            background-color:#FFD700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            border-radius: 8px;
+            color: white;
+            /* secret of everthing duh*/
+            margin-left: -100px;
+        }
+        .right h1{
+            font-size: 40px;
+            font-weight: lighter;
+        }
+        .right p{
+            margin: 20px 0;
+            font-weight: 500;
+            line-height: 25px;
+        }
+        .right a{
+            text-decoration: none;
+            text-transform: uppercase;
+            background-color: white;
+            color: black;
+            padding: 20px 30px;
+            display: inline-block;
+            letter-spacing: 2px;
+            border-radius: 8px;
+        }
+        @media only screen and (max-width: 768px) {
+           .container{
+               flex-direction: column;
+               width: 100%;
+               margin: 0 20px;
+           }
+           .left{
+               width: 100%;
+               height: 600px;
+           }
+           .right{
+               width: 100%;
+               margin: 0;
+               margin-top: -100px;
+           }
+            
+        }
+    </style>
+</body>
+</html>

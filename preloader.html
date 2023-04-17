@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--add code and path of img -->
+<body>
+    <div id="preloader"></div>
+    <h1>hello world
+    </h1>
+    <!--just put img path and be sure image background be same with background style -->
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    #preloader{
+    background:#4a484b url(images/loader2.gif) no-repeat center center;
+    background-size: 33%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+    </style>
+    
+<script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load",function(){
+      setTimeout(function() {
+        loader.style.display = "none";
+      }, 2000); // 2000ms = 2 seconds
+    })
+  </script>
+</body>
+</html>
